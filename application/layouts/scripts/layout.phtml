@@ -1,0 +1,34 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Stylish Portfolio - Start Bootstrap Theme</title>
+
+        <!-- CSS -->
+        <link href="<?php echo $this->baseUrl("views/css/bootstrap.min.css"); ?>" rel="stylesheet">        
+        <link href="<?php echo $this->baseUrl("views/css/bootstrap-theme.min.css"); ?>" rel="stylesheet">
+        <link href="<?php echo $this->baseUrl("views/css/style.css"); ?>" rel="stylesheet">
+
+        <!-- Js -->
+        <script src="<?php echo $this->baseUrl("views/js/jquery.min.js"); ?>"></script>
+        <script src="<?php echo $this->baseUrl("views/js/bootstrap.min.js"); ?>"></script>
+
+        <?php echo $this->headScript(); ?>
+
+    </head>
+    <body>
+        <?php echo $this->partial('partials/menu.phtml'); ?>
+        <div class="container" id="content">
+            <?php echo $this->layout()->content; ?><hr />            
+            <?php echo $this->partial('partials/footer.phtml'); ?>
+        </div> <!-- /container -->        
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>
